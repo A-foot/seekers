@@ -1,0 +1,80 @@
+/* CSS for happy-trails 
+
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-decoration: none;   */
+  
+  		nav ul{
+			list-style-type: none;
+			text-align: center;
+		}
+		nav li{
+			display:inline;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+	
+		nav a{
+			color: #00ef8f;
+			font-size: 1.70em;	
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			text-decoration: none;			
+		}
+
+		.currentpage{  /* under the nav names */
+			border-bottom:#00ef8f solid 2px;
+		}
+
+
+	.AT-h1{
+		 /* top line of text */
+			color: #00ef8f;
+			text-align: center;
+			width: 60%;
+			margin: auto;
+			color: black;
+			font-size: 1.0em;	
+			font-family: Sans-serif;
+			}	
+ 
+.wrapper {
+  flex: 1 0 auto; /* This makes the wrapper grow to fill available space, pushing the footer down */
+}
+	
+.no-wrap{
+	white-space: nowrap;
+	}
+
+.pic-line-one  {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}	
+
+	img {  /* no '.' or '#'   */
+		display: block;
+		margin: auto;
+		}
+
+	.at-description {
+		font-family: monospace;
+		text-align: center;	
+		font-size: 2.1em;		
+		color: blue;
+		width: 60%;
+		margin: auto;		
+		}
+	
+
+.foot {
+	flex-shrink: 0; /* Prevents the footer from shrinking */
+	/* Add styling for your footer (e.g., background-color, padding) */
+	background-color: Black;
+	padding: 10px;
+	text-align: center;  
+	font-style: italic;
+	font-family: Sans-serif;
+	color: #ffd125;
+	font-size: 1.0em;
+	}

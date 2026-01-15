@@ -1,0 +1,162 @@
+
+/* main.css  L-Deck  C12.14.2024  R1.14.2026   */
+
+		nav ul{
+			list-style-type: none;
+			text-align: center;
+		}
+		nav li{
+			display:inline;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+	
+		nav a{
+			color: #00ef8f;
+			font-size: 1.7em;	
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			text-decoration: none;			
+		}	
+	
+		.currentpage{   /* underline the current navigation name  */
+			border-bottom:#00ef8f solid 2px;
+		}
+
+	
+	.LD-h1{
+		 /* top line of text */
+			color: transparent;
+			text-align: center;
+			width: 60%;
+			margin: auto;
+			color: #BF40BF;
+			font-size: 1.20em;	
+			font-family: Sans-serif;
+			}
+
+	.Line2-Head{  /* light purple #BF40BF; dark yellow #8B8000 or color #BA8E23; dark red  #D10000; #009fff was blue  */
+		
+		background-image: linear-gradient(to right, white, #BF40BF, violet, #009fff, green, #8B8000, orange, red, #D10000, white);
+		 -webkit-background-clip: text; /* required for text to appear */
+		 background-clip: text;
+		
+		 /* Make the text transparent to reveal the background gradient 
+			min-width: 100px; /* Important to prevent collapse without content 
+			min-height: 30px;  /* Important to prevent collapse without content 
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+			font-style: bold;  */
+			font-family: monospace;		
+			font-size: 1.8em;  
+			width: 80%;
+			color: transparent;
+			text-align: center;   /* was center   */
+			margin: auto;
+			}
+
+	.spectrum-bar {
+		display: flex;	
+		height: 42px;
+		width: 1080px;
+		margin: auto;
+		background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red, #ff4d4d);
+		border: none; /* adds an optional border */
+		}
+	
+				/* used for 400/700 nm indicators;  screen size  1920 Horizontal 1080 Verticle  */
+	.color-WL{  /*PARENT  light purple #BF40BF; dark yellow #8B8000 or color #BA8E23; dark red  #D10000 font-size:28px  */
+	
+		background-image: linear-gradient(to right, #BF40BF, violet, indigo, blue, green, #8B8000, orange, red, #D10000);
+			-webkit-background-clip: text; /* required for text to appear */
+			background-clip: text;		 
+			width: 57%;			
+			display: flex;           /* KEY to keep from wrapping  key */	/* Distributes available space evenly between the items */
+			font-family: monospace;		
+			font-size: 2.0em;  
+			color: transparent;
+			justify-content: space-between;  /* KEY to keep from wrapping, Optional: Aligns items vertically in the center if they have different heights */
+			padding: 10px;
+			margin: auto;    	/* KEY to keep from wrapping  key  key */			
+			}
+			
+		/* Children */	
+	.left{flex-shrink: 0;}  /* KEYs to keep VL-wave-length from wrapping  key */	
+	.right{flex-shrink: 0;}	 /* or  .right {text-align: right};  */
+	.center{text-align: center;}/* Optional: flex-grow can be used if you want the items to grow and take up equal space, flex-grow: 1; */
+					/*  flex: 1; is shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0% align-items: center;  12.26.25 not used */
+
+	.single-color{  /*  */
+			width: 60%;			
+			display: flex;           /* KEY to keep from wrapping  key */	/* Distributes available space evenly between the items */
+			font-family: monospace;		
+			font-size: 22px;  
+			color: #00ef8f;
+			justify-content: space-between;  /* KEY to keep from wrapping, Optional: Aligns items vertically in the center if they have different heights */
+			margin: auto;    	/* KEY to keep from wrapping  key  key */			
+			}
+
+#sine-wave  {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}	
+	
+	.wave-math {			
+		/*   */
+		font-style: none;
+		font-family: monospace;	
+		width: 60%;
+		text-align: center;
+		margin: auto;	
+		color: #ff9999;
+		font-size: 1.5em;
+		}
+		
+	#formula {			
+		/*   */
+		font-style: none;
+		font-family: monospace;
+		width: 70%;
+		text-align: center;		
+		margin: auto;	
+		color: #BF40BF;
+		font-size: 1.8em;
+		}
+			
+	
+	.light-description{
+		font-family: monospace;
+		font-size: 1.65em;
+		text-align: justify;		
+		color: #ff9999;
+		width: 60%;
+	/*		text-align: center;  not used */
+		margin: auto;			
+		}
+
+html, body {
+  height: 100%; /* Ensure the body spans the full viewport height */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.wrapper {
+  flex: 1 0 auto; /* This makes the wrapper grow to fill available space, pushing the footer down */
+}
+	
+	.no-wrap{
+		white-space: nowrap;
+	}
+
+.foot {
+  flex-shrink: 0; /* Prevents the footer from shrinking */
+  /* Add styling for your footer (e.g., background-color, padding) */
+  background-color: Black;
+  padding: 8px;
+  text-align: center;  
+		font-style: italic;
+		font-family: Sans-serif;
+		color: #ffd125;
+		font-size: 1.0em;
+}
+

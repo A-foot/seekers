@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">		<!--  index.html for AFP@L-Deck.com C.12.14.2024   R.1.14.2026 -->
+						
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YM272KD5GQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YM272KD5GQ');
+</script>
+
+		<title>Electromagnetic Radiation</title>	
+		<link rel="stylesheet" href="styles/main-index.css">
+		<link rel="stylesheet" href="styles/Q-button.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<!--  ACTIVATE base only for live hosting !! The <base> tag specifies the base URL and/or target for all relative URLs in a document  -->	
+		<base href="https://www.L-deck.com/" target="_blank"> 
+
+	<meta name="keywords" content="Education, EMR, EMS, light, sine wave, spectrum, color">
+		
+	<meta name="description" content="electromagnetic radiation">	
+	
+</head>
+
+<body>    <div class="wrapper">    <!--	wrapper ends at footer     --> 
+
+<nav><ul>
+
+	<li><a href="Radio Waves.html">Radio Waves</a></li>	
+		&emsp;&emsp;&emsp;	
+		
+	<li class="currentpage">
+		<a href="index.html">EMR</a></li>
+		
+		&emsp;&emsp;&emsp;	
+	<li><a href="AT.html">AT</a></li>
+	
+</ul></nav>
+
+	<body style="background-color:black;">	
+	
+<header> 
+		<div class="LD-h1"><h1>EMR - Electromagnetic Radiation</h1></div>
+
+		<div class="Line2-Head"><h4>The visible light region is part of the electromagnetic spectrum.</h4></div>		
+</header>
+
+<main>
+<div class="no-wrap">
+
+	<div class="spectrum-bar"></div>
+
+	<div class="color-WL">
+		<div class="left"> (&#x3BB;)=400 nm</div>
+		<div class="center"><span style='color:#00ef8f;'>Single Wavelength</span></div>		
+		<div class="right"> (&#x3BB;)=700 nm</div>		
+	</div>
+
+    <img id='sine-wave'
+        width=300
+        height=80
+        src="sine_wave_animation.svg"
+        alt="SVG animation of a sine wave."
+		>
+</div>
+
+<div class="light-description">
+	<p>Electromagnetic waves of energy are a combination of an electric field and a magnetic field that oscillate while traveling at 
+	the speed of light.  EMR regions are classified by wavelength, largest to smallest: radio waves, microwaves, infrared, visible light, 
+	ultraviolet, X-rays and gamma rays. </p>
+</div>
+
+<div class="wave-math">
+		<p>(&#x3BB;) is the Greek letter lambda. It is the symbol used to express wavelength.</p>
+		<p>This mathematical relationship holds true for all electromagnetic waves.</p>
+		<p><div id='formula'>(&#x3BB;) = <em>c</em>/<em>f</em> &emsp; or &emsp; <em>f</em> = <em>c</em>/(&#x3BB;)</div>  </p>	
+
+		<p>(&#x3BB;), </span>represents a single cycle (period) of EMR (<span style='font-size:32px;'>&#8767;</span>) with a length in meters.</p>	
+		<p><em>c</em>, is the speed of light, in meters per second: 299,792,458 m/s. </p>
+		<p><em>f</em>, is the frequency, in cycles per second, expressed in Hertz (Hz).</p>
+</div>
+
+<div class="light-description">
+
+	<p><span style='text-align:center; display:block;'>If 550 nm is the midpoint of the visible light spectrum, what is the frequency at that point?</span></p>
+
+<!--  Q Button  !-->
+
+<div class="Q-center"> 
+		<div class="Q-button-position" <button id="Q-button">Answer</button></div>
+</div>
+
+<div id="textToReveal" class="hidden-text"></div>
+
+<script>
+  // JavaScript to toggle visibility on click.  uses get element by ID
+  const button = document.getElementById('Q-button');
+  const textContainer = document.getElementById('textToReveal');
+
+  button.addEventListener('click', function() {
+    // Toggle the 'hidden-text' class
+    textContainer.classList.toggle('hidden-text');
+    
+    // Optional: Change the button's text after the first click
+    if (textContainer.classList.contains('hidden-text')) {
+      button.textContent = 'Reveal';
+    } else {
+      button.textContent = '545,077,196 MHz';
+    }
+  });
+</script></div>										
+<br><br><br><br><br>
+
+	<p><div class="light-description"><span style='color: #00ef8f;'><div class="center">Radio Frequency  (&#x3BB;) = 100 m</div></span>
+
+	</div></p>
+<nav><ul>
+
+	<li><a href="Radio Waves.html">Click Here for RF Description</a></li>	
+	
+</ul></nav>
+
+<br><br>
+
+	<div class="light-description"><span style='color: #99ffeb;'><p> <div class="center">Microwave (&#x3BB;) = 10 mm</div>		
+	Microwaves occupy a region of EMR with wavelengths ranging from 1 mm to 1 meter making them 
+	short-wavelength radio waves.  Microwave ovens radiate at a frequency of 2.45 GHz, with (&#x3BB;) = 122 mm, creating heat from 
+	molecular friction via a transfer of energy.  The wave properties of microwaves make them well suited for use in satellite 
+	communication and radar systems.</span></p>
+<br>
+	<span style='color:Red;'><p> <div class="center">Infrared (&#x3BB;) = 10 &#x3BC;m</div>		
+	The invisible infrared region covers wavelengths from 700 nm up to 1 mm. IR is also known as thermal radiation and is
+	naturally produced by solar radiation and fire.  Every object, both hot and cold, gives off heat in the form of IR.  IR has a 
+	lower energy level and a longer wavelength than the EMR that produces visible light.</p> </span></p>
+<br>
+	<span style='color:#00ef8f;'><p> <div class="center">Visible Light (&#x3BB;) = 550 nm</div>		
+	The visible light spectrum is a very narrow band of the electromagnetic spectrum. Visible light is comprised 
+	of the colors of the rainbow: red, orange, yellow, green, blue, indigo, and violet. Different wavelengths correspond to the 
+	different colors, with red having the longest wavelength and violet the shortest. Our eyes detect this specific range of wavelengths that 
+	the brain interprets as colors.  When combined together the visible wavelengths appear as white light.</span> </p>
+<br>
+
+	<span style='color:#BF40BF;'><p> <div class="center">Ultraviolet (&#x3BB;) = 100 nm</div>The invisible 
+	ultraviolet region covers wavelengths from 400 nm down to 10 nm. The sun is the major source 
+	of UV radiation that is known for it's harmful UV-B and UV-C sub-regions that are mostly absorbed by the earth's atmosphere.
+	UV has a higher energy level and a shorter wavelength than the EMR that produces visible light.</span> </p>
+<br>	
+	<span style='color:#ff9999;'><p> <div class="center">X-rays (&#x3BB;) = 1 nm </div>X-rays (&#967;) are high-energy 
+	electromagnetic radiation with wavelengths between 0.01 nm and 10 nm and are 
+	generated when inner-shell electrons transition between energy levels.  Both X-rays and light waves transport energy as waves and photons.  
+	Their short wavelengths allow them to pass through less dense materials but not through dense materials such as bone.  
+	X-rays are a high energy form of ionizing radiation, meaning they can damage living tissue.</span></p>
+<br>
+	<span style='color:#99ffeb;'><p> <div class="center">Gamma rays (&#x3BB;) = 1x10<sup>-6</sup> nm </div>		
+	Gamma rays (γ) are the highest-energy form of EMR and originate from the nucleus of an atom.  
+	Gamma rays have the smallest wavelengths and are classified as both a wave, and photons that travel as mass-less packets of 
+	pure energy.  They are produced by nuclear processes like radioactive decay and supernova explosions. They are highly penetrating, able to pass 
+	through dense materials like lead, and can cause damage to living tissue by ionizing atoms.</span></p>
+</div>	<!-- end of light description  -->
+	
+	<br><br><br>
+	
+</div> <!-- end of wrapper  -->  
+</main> 
+<footer>		
+		<p Class="foot"> <strong>Keywords: Education, EMR, EMS, electromagnetic radiation, 
+			light, sine, spectrum, waves, visible colors. 
+			<br>&copy; 2024 - <span id="current-year"></span> Send feedback to email: AFP@L-Deck.com</strong></p>
+	<br><br><br>			                   
+            <script>
+				document.getElementById("current-year").textContent = new Date().getFullYear();
+            </script>		
+</footer>	
+</body>
+</html>

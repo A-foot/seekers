@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-US">		<!--  Radio Waves.html  C.12.23.2024   R.1.14.2026 -->
+						
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YM272KD5GQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YM272KD5GQ');
+</script>
+
+		<title>Radio Waves</title>
+		
+		<link rel="stylesheet" href="styles/RF.css">		
+		<link rel="stylesheet" href="styles/Q-button.css">				
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+		
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="keywords" content="decibel, MDS, minimum detectable signal, noise power, RF, FT8">
+		
+	<meta name="description" content="Determine the minimum detectable signal">	
+		
+</head>
+
+<body>    <div class="wrapper">    <!--	wrapper ends at footer     --> 
+
+<header>
+	<nav><ul>
+
+		<li class="currentpage"><a href="Radio Waves.html">Radio Waves</a></li>	
+		&emsp;&emsp;&emsp;		
+		
+		<li><a href="index.html">EMR</a></li>	
+		&emsp;&emsp;&emsp;	
+		
+		<li>  <a href="AT.html">AT</a></li>		
+	</ul></nav>
+
+	<body style="background-color:Black;">
+	
+	<div class="RF-h1"><h1>RF - Radio Frequency</h1></div>
+	<div class="RF-h2"><h2>The RF region is part of the electromagnetic spectrum below microwaves.</h2></div>
+ 
+</header>
+<main>
+<div class="RF-description">	
+	
+<br><br>
+	<p>Radio (RF) waves of EMR are a combination of an electric field and a magnetic field that 
+	oscillate while traveling at the speed of light. In the EMR spectrum, RF waves have the lowest frequencies and longest wavelengths.</p>
+	
+	<p>Each radio transmitter uses a process of imposing an input signal onto a carrier wave. The transmitter modulates the carrier wave prior to
+	transmission. At the radio receiver, information is extracted by demodulation.  </p>
+	
+	<p>In RF (Radio Frequency), modulation is the essential process of encoding information such as voice, data, or video, onto a carrier wave by 
+	systematically changing the carrier's amplitude, frequency, or phase. This process allows RF signals to travel over long distances making 
+	it practical for communication using radios, Wi-Fi, GPS and mobile phones. </p>
+	
+	<div class="indent-text">
+	Amplitude Modulation (AM):  carrier amplitude varies with the signal.<br>
+	Frequency Modulation (FM):  carrier frequency varies.<br>
+	Phase Modulation (PM):  carrier phase varies as in phase shift keying (PSK) or quadrature amplitude modulation (QAM).<br>
+	Data Modulation uses various modulation types.<br>
+	</div><br>
+	<p>Effective RF communications depend on clear distortion free signals.  Comparing  power levels, both signal and noise, 
+	is necessary in order to evaluate signal quality. </p>
+	<br>
+</div>	
+	
+<div class="wireless">	
+	<h3> WIRELESS SIGNAL POWER   [ dB, dBm and dBW ]</h3>
+	
+	<p> In the world of RF math, converting power levels to decibels is the preferred approach. Decibels, abbreviated as dB, are a basic unit 
+	of measurement for RF signals that vary logarithmically, not linearly. Decibels are useful when expressing values with large differences 
+	in magnitude. On the dB scale, signal gains and losses are calculated using numbers that provide a measurement of relative RF signal strength.  
+	Small or low level signals may be negative dB numbers while large or strong signals are positive dB numbers. </p>
+	
+	<p>Decibels are used to define the relative difference when comparing two or more signals.  These hardware examples compare the input signal 
+		of a device to the output signal:</p>
+		
+	<div class="indent-text">		
+		A signal amplifier with a gain of 20 dB.<br>
+		An antenna with a gain of 4.3 dB.<br>
+		Connection cable with a 6.5 dB loss.<br>
+		RF inline attenuator with a 10 dB loss.<br>
+	</div>
+	
+	<p>Both dBm and dBW use a set reference point in order to compare signal power levels.</p>
+
+	<p><strong>dBm</strong> (dB-milliwatts) zero dBm is defined as one mW of power (0.001 Watt).  One mW is the reference point for units of dBm.  
+	A value of 30 dBm is equal to 1,000 mW or one watt of power.</p>
+	
+
+
+<div class="rf-math">
+		<p>0 dBm = 1 mW and 1 mW = -30 dBW </p>
+	
+		<p>30 dBm = 1 watt and 1 watt = 0 dBW</p>
+</div>
+
+	<p><b>dBW</b> (dB-Watts) zero dBW is defined as one watt of power and one watt is the reference point for units of dBW.</p>
+
+<div class="rf-math">
+	<p>Convert dBW to dBm:&emsp; dBm = dBW + 30 dB;&emsp; e.g. 5 dBW = 35 dBm</p>
+
+	<p>Convert dBm to dBW:&emsp; dBW = dBm – 30 dB;&emsp; e.g. 18 dBm = -12 dBW</p><br>
+	
+	<p>If a<sup>x</sup> = n then x = log<sub>a</sub> (n). </p>
+
+	<p>Convert dBm to power:&emsp; P(W) = 10<sup>(( dBm - 30 dB) / 10)</sup></p>
+
+	<p>35 dBm = 3.16 W;&emsp;<span style='color:#00ef8f;'>-12 dBm = ?</span>&emsp;21 dBm = 126 mW
+	
+	
+<!-- HTML Q Button  !-->
+
+<div class="Q-center"> 
+		<div class="Q-button-position" <button id="Q-button">Answer</button></div>
+</div>
+
+<div id="textToReveal" class="hidden-text"></div></p>
+
+<script>
+  // JavaScript to toggle visibility on click.  uses get Element By Id
+  const button = document.getElementById('Q-button');
+  const textContainer = document.getElementById('textToReveal');
+
+  button.addEventListener('click', function() {
+    // Toggle the 'hidden-text' class
+    textContainer.classList.toggle('hidden-text');
+    
+    // Optional: Change the button's text after the first click
+    if (textContainer.classList.contains('hidden-text')) {
+      button.textContent = 'Reveal';
+    } else {
+      button.textContent = '0.063 mW';
+    }
+  });
+</script>										
+<br>
+	<div class="no-wrap">
+	  <p>Convert power to dBm: P(dBm) = 10 x log<sub>10</sub> (power in watts) + 30 dB</p>
+	</div>	<!--  end of no-wrap  -->
+
+	<p>5 W = 37 dBm; &emsp;  100 W = 50 dBm; &emsp;   0.025 W = 14 dBm </p>  
+
+	<p>0.001 mW = 0.000001 W = -30 dBm</p>
+</div>
+	
+	<p>Logarithms are the opposite of exponents. Logs are used when things grow exponentially but are measured on the smaller 
+	logarithmic scale: 10<sup>3</sup> = 1000 becomes log<sub>10</sub> 1000 = 3;  
+	log<sub>10</sub> 100 = 2; log<sub>10</sub> 23 = 1.36; log<sub>10</sub> 1 = 0; log<sub>10</sub> 0.0027 = -2.57; 
+	log<sub>10</sub> 0.000006 = -5.22.  Using logarithms reduces complex math into simple addition, making wide ranges of values manageable.</p>
+
+	<p>Using dB power values, it is possible to calculate the voltage on the antenna input of a radio receiver.  An understanding of the 
+	ambient RF background noise level is necessary to determine the minimum required signal level for detection on a receiver, 
+	by a radio operator.</p><br>
+	
+</div>
+
+
+<div class="noise-floor">
+
+		<h3>THERMAL NOISE POWER</h3>
+
+	<p>Black-body radiation is a theoretical concept used in determining the thermal energy, in the form of EMR, emitted by every object, 
+	based solely on its temperature. This radiation is generated by the motion of charged particles (electrons) within the object and 
+	is directly proportional to its temperature.  The Boltzmann Constant <span style='color:#61ffff;'><strong>k</strong><sub>B</sub></span> is 
+	a fundamental physical measure of the average energy, 
+	in joules, of a particle to its absolute temperature, in Kelvin.  Use of a capitol “K” is the symbol for the Kelvin scale and 
+	the Kelvin scale is considered absolute due to the fundamental limit of zero thermal energy at zero Kelvin.</p>
+
+<div class="center-no-b"><span style='color:#61ffff;'> &emsp;&emsp;&emsp;&emsp;
+	<strong>k</strong><sub>B</sub></span> = 1.380649 x 10<sup>(-23)</sup>  J/K (Joules per Kelvin)</div>
+
+	<p>Power = energy / time, or one watt of power is defined as one joule of energy dissipated per one second or one Hertz.  Substitute 
+	for the units in Joules and <span style='color:#61ffff;'><strong>k</strong><sub>B</sub></span> is now expressed as the amount of thermal
+	noise power in watts per hertz per Kelvin.</p>
+
+<div class="center">
+	(Constant) <span style='color:#61ffff;'><strong>k</strong><sub>B</sub></span> =  1.380649 x 10<sup>(-23)</sup> W/Hz/K</div>
+
+	<p>The following examples use an ambient temperature (<span style='color:#61ffff;'>T<sub>a</sub></span>) of 59°F or 15°C which 
+	equates to 288K.</p>  
+	
+	<p>Bandwidth (<span style='color:#61ffff;'>BW</span>) is the difference between the highest and lowest frequencies in a modulated signal 
+	used for transmitting information, representing the "space" it occupies in the electromagnetic spectrum. A wider bandwidth means more capacity 
+	allowing for a faster transfer of information, while a narrower bandwidth is good for isolating weak signals. </p> 
+
+	<p>Thermal noise power is calculated by multiplying <span style='color:#61ffff;'><strong>k</strong><sub>B</sub></span> times 
+	<span style='color:#61ffff;'>T<sub>a</sub></span> times <span style='color:#61ffff;'>BW</span>. The result is converted to dB-Watts and 
+	expressed in dB-milliwatts.</p>
+
+<div class="no-wrap">
+	<p>Thermal noise power = 10 x log<sub>10</sub> (<span style='color:61ffff;'><strong>k</strong><sub>B</sub></span>  x  288 K x 1 Hz) + 30 dB = 
+		<span style='color:#61ffff;'><strong>-174 dBm/Hz</strong></span>.</p> </div>
+
+	<p>The thermal noise power (<span style='color:#61ffff;'><strong>k</strong><sub>B</sub>T<sub>a</sub>BW</span>) is:  <span style='color:#61ffff;'>
+	<strong>-174 dBm/Hz</strong></span> with a noise bandwidth of 1 Hz at a <span style='color:#61ffff;'>T<sub>a</sub></span> = 59°F.  
+	There is a minimum of <span style='color:#61ffff;'><strong>-174 dBm/Hz</strong></span> 
+	of noise present within every Hertz (Hz) of the RF spectrum.</p>
+
+</div>
+<br>
+<div class="dB-math">
+	<h3>APPLYING NOISE POWER TO TRANSMITTED SIGNALS</h3>
+
+		<p>This formula is used to find the thermal noise floor at a given bandwidth:</p>
+	
+<div class="center-no-b">
+	(<span style='color:#61ffff;'><strong>-174 dBm/Hz</strong></span>) + [10 x log<sub>10</sub> (Bandwidth)]  =  Power (dBm)</div><br>
+	
+<div class="center-no-b"><span style='color:#4da6ff;'>	
+
+	<span style='color:#00ef8f;'>thermal noise floor</span><strong> = <span style='color:#61ffff;'><strong>-174 dBm/Hz</strong></span></strong>
+	+ [10 x log<sub>10</sub> (80 MHz)]  =  <span style='color:#00ef8f;'>-95 dBm</span> <br><br>
+	
+	<span style='color:#00ef8f;'>thermal noise floor</span><strong> = <span style='color:#61ffff;'><strong>-174 dBm/Hz</strong></span></strong>
+	+ [10 x log<sub>10</sub> (50 Hz)]  =</span><span style='color:#00ef8f;'> -157 dBm</span></div><br><br>
+
+<div class="no-wrap">
+<table style="width:95%">
+<caption><h3>Thermal noise floor as a function of Bandwidth</h3></caption>
+  <caption style="caption-side:bottom"><div class="notes">Gbps-Gigabits per second; &emsp;wpm-words per minute; &emsp;bps-bits per 
+  second;<br>DSP-Digital Signal Processor </div></caption>
+  <tr>
+	<th>Transmission Type</th>
+	<th>Bandwidth&emsp;&emsp;&emsp;&emsp;</th>
+	<th><span style='color:#00ef8f;'>thermal noise floor</span>&emsp;&emsp;&emsp;&emsp;</th>
+	<th>Data Speed &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </th>
+  </tr>	
+  <tr>
+	<td>WiFi 7, 59 channels</td>	<td>160 MHz</td><td><span style='color:#00ef8f;'>-92 dBm</span></td><td>46 Gbps</td>
+  </tr>	
+  <tr>
+	<td>WiFi 6, wider channels</td>	<td>80 MHz</td>	<td><span style='color:#00ef8f;'>-95 dBm</span></td>	<td>9.6 Gbps</td>
+  </tr>
+  <tr>
+	<td>WiFi 5, 25 channels</td>	<td>40 MHz</td>	<td><span style='color:#00ef8f;'>-98 dBm</span></td>	<td>3.5 Gbps</td>
+  </tr>
+  <tr>
+	<td>WiFi 4, 11 channels</td>	<td>20 MHz</td>	<td><span style='color:#00ef8f;'>-101 dBm</span></td>	<td>0.6 Gbps</td>
+  </tr> 
+	<td>FM (voice)</td>	<td>175 kHz</td>	<td><span style='color:#00ef8f;'>-122 dBm</span></td>	<td>na</td>  
+  <tr>
+  </tr> 
+	<td>FM (voice)</td>	<td>20 kHz</td>	<td><span style='color:#00ef8f;'>-131 dBm</span></td>	<td>na</td>  
+  <tr>  
+  </tr> 
+	<td>AM (voice)</td>	<td>10 kHz</td>	<td><span style='color:#00ef8f;'>-134 dBm</span></td>	<td>na</td>  
+  <tr>  
+  </tr> 
+	<td>SSB (voice)</td> <td>2.4 kHz</td> <td><span style='color:#00ef8f;'>-140 dBm</span></td>	<td>na</td>  
+  <tr>  
+   </tr> 
+	<td>RTTY (radio teletype)</td>	<td>1 kHz</td>	<td><span style='color:#00ef8f;'>-144 dBm</span></td>	<td>50 bps</td>  
+  <tr>
+  </tr> 
+	<td>CW (Morse code)</td>	<td>500 Hz</td>	<td><span style='color:#00ef8f;'>-147 dBm</span></td>	<td>30 wpm</td>  
+  <tr>
+  </tr> 
+	<td>FT8 Weak signal + DSP&emsp;</td><td>50 Hz</td><td><span style='color:#00ef8f;'>-157 dBm</span></td><td>10 bps</td>  
+  <tr> 
+</table><br>
+</div>  <!--  end of no wrap -->
+
+	<p>The wider the bandwidth, the stronger the noise power and the noise power determines the thermal noise floor. 
+	In order to define a clean signal, other sources of noise must be taken into consideration.</p>
+	
+	<p>The Noise Figure, internal to each receiver, is the noise generated by the electronics of the receiver.</p>
+	
+	<p>External noise sources include atmospheric noise, cosmic noise and man-made interference.  The actual noise floor of a 
+	receiver encompasses all of the RF energy within a given frequency range with the exception of the 
+	intentional signaling energy.</p>
+
+	<p>To compare signals and noise levels, the signal-to-noise ratio (SNR) is a very convenient indicator.  To determine the SNR, for 
+	a given transmitted signal, we need to know its strength at the point of reception minus the actual noise floor.  The difference 
+	between these two values is the SNR, measured in dB. If the SNR value is greater than 0 dB, the signal power is greater than the 
+	noise power.</p>
+
+	<p>For example, an AM broadcast with a signal strength of -102 dBm with a receiver noise floor of -128 dBm.
+	The result is a signal-to-noise ratio of 26 dB which results in very good audio quality and clarity. </p>
+
+	<p>An FM broadcast, with a signal strength of -112 dBm with a receiver noise floor of -116 dBm would have a 
+	signal-to-noise ratio of 4 dB. An SNR of 4 dB is marginal for an FM transmission and less than 4 dB is likely unusable.</p>
+	
+	<p>SNR is also calculated as a ratio of signal power:  10 x log<sub>10</sub> (signal power in watts / noise floor power in watts)</p>
+	
+<br>
+	<h3>SSB EXAMPLE</h3>
+
+	<p>The next two examples determine the minimum detectable input voltage at the antenna connection point of a radio receiver with 
+	a 50 ohm input impedance. The value of <span style='color:#a64dff'>V<sub>in</sub></span> is the strength of the 
+	weakest operator detected signal.</p> 
+	
+	<p>Transmitted signals on single-side band (SSB) have a bandwidth of 2400 Hz 
+	and a thermal noise floor of <span style='color:#00ef8f;'>-140 dBm.</span> In this case, the receiver has a Noise Figure of 3 dB. 
+	Add -140 dBm + 3 dB producing an actual noise floor of -137 dBm. SSB communication typically requires 
+	an SNR of +6 dB resulting in a minimum detectable signal strength also known as minimum discernible signal (MDS)  
+	of <span style='color:red;'>-131 dBm</span>.</p>
+	
+	<p>Convert the MDS from milliwatts to watts: <span style='color:red;'>-131 dBm</span> – 30 dB = -161 dBW.</p>
+
+	<p><span style='color:#a64dff'>V<sub>in</sub></span> = (R x P)<sup>(1/2)</sup></p>
+
+	<p><span style='color:#a64dff'>V<sub>in</sub></span> (2400 Hz) = square-root (50 ohms x 10<sup>[-161/10]</sup>) 
+	= 6.30 x 10<sup>(-08)</sup>  or <span style='color:#a64dff'>63.0 nV.</span></p>
+
+	<p>For a detectable signal on SSB, the minimum voltage at the receiver input is 63 nano-volts.</p>
+	
+<br>	
+	<h3>FT8 EXAMPLE</h3>
+	
+	<p>FT8 (8 base tones) is a weak-signal mode that relies on digital signal processing (DSP) and is used to contact distant stations. 
+	With a bandwidth of 50 Hz, FT8 has a very narrow bandwidth and uses forward error 
+	correction (FEC) to reconstruct partial messages. FT8 signals are modulated using Gaussian* frequency shift keying (GFSK).  Prior to 
+	transmission, a pulse shaping filter provides smoothing of the frequency transitions resulting in better immunity to noise and interference 
+	while enhancing reliability.  FT8 provides a vehicle for the communication of small message payloads (174 bits) over thousands of 
+	miles at relatively low power in high noise environments.</p>
+	
+<div class="notes">
+
+	<p><span style="color: #ffd125;">*A Gaussian waveform is similar to a bell curve which limits noise due to overshoot.</span></p>
+
+	<div style="display: flex; justify-content: center;"> 
+		<img src="images/Gaussian-Filter.jpg" alt="Gaussian Distribution"width="140" height="115">
+	</div>	<br>
+</div>
+
+	<p>For an FT8 signal, with a thermal noise floor of: <span style='color:#00ef8f;'>-157 dBm</span> on a receiver with a Noise Figure 
+	of 5 dB along with 10 dB of atmospheric noise, the actual noise floor is: -142 dBm.
+	But FT8 communication is capable of detecting signals 6 dB below the noise floor so the minimum SNR for FT8 is -6 dB resulting in a  
+	minimum detectable signal strength (MDS) of: -142 dBm - 6 dB = <span style='color:red;'>-148 dBm</span>.</p>
+	
+	<p>Convert the MDS for FT8 to dB watts:  <span style='color:red;'>-148 dBm</span> – 30dB   = -178 dBW.</p>
+	
+	<p><span style='color:#a64dff'>V<sub>in</sub></span> (50 Hz) = square-root (50 ohms x 10<sup>[-178/10]</sup>) 
+	= 8.9 x 10<sup>(-09)</sup>  or  <span style='color:#a64dff'>8.9 nV.</span></p>
+
+	<p>The minimum detectable input voltage is </span><span style='color:#a64dff'>8.9 nV</span> (nano-volts). FT8 transmissions are detected using 
+	a remarkably small signal even in noisy environments.  Other weak signal digital modes include short range applications such 
+	as Bluetooth and the Internet of Things (IoT).</p>
+<br><br><br>
+
+	<p>Originators: Michael Faraday, James Clerk Maxwell, Heinrich Hertz, Ludwig Boltzmann, Max Planck, 
+	Alexander Graham Bell, Guglielmo Marconi.</p>
+	
+  </div>  	<!-- end of dB-math	-->
+</div>  <!--  end of wrapper  -->
+
+<br><br>		
+  
+</main>
+
+	<footer>		
+		<p Class="foot"> <strong>Keywords: decibel, FT8, MDS, minimum detectable signal, noise power, RF.<br>
+			&copy; 2024 - <span id="current-year"></span> Send feedback to email address: AFP@L-Deck.com  </strong> </p>
+	<br><br><br>		                   
+            <script>
+				document.getElementById("current-year").textContent = new Date().getFullYear();
+            </script>
+	</footer>	
+</body>  
+</html>
