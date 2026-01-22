@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">		<!--  index.html for AFP@L-Deck.com C.12.14.2024   R.1.21.2026 -->
+<html lang="en-US">		<!--  index.html for AFP@L-Deck.com C.12.14.2024   R.1.22.2026 -->
 						
 <head>
 <!-- Google tag (gtag.js) -->
@@ -127,7 +127,7 @@
 	<span style='color:#ff9999; font-size:25px;'> <p>EMR as a Particle</p></span>
 	
 	<p>Electromagnetic energy is composed of fundamental particles called photons (or quanta) that have characteristics of both particles and waves.  Photons are discrete packets of 
-	energy that make up the entire EMS spectrum, where energy levels depend on the wave frequency. Low-energy photons make up radio waves, 
+	energy that make up the entire EMS spectrum where energy levels depend on the wave frequency. Low-energy photons make up radio waves, 
 	while high-energy photons make up X-rays and gamma-rays. A specific energy level also defines each class type of EMS. </p>
 	
 	<p>A correlation exists between the energy of a photon and its wave frequency. The following equation also holds true for all electromagnetic waves: </p>
@@ -135,13 +135,38 @@
 <div class="wave-math">		
 		<p><div id='formula'>E = <em>h</em> x <em>f</em> &emsp; or &emsp; <em>f</em> = E / <em>h</em></div>  </p>	
 
-		<p>E is the energy of one photon or light particle and E is expressed in units of (eV), electronVolt.</p>	
+		<p>E is the energy of one photon or light particle. E is expressed in units of (eV), electronVolt.</p>	
 	
 		<p><em>h</em> is Planck’s constant = 6.6260715 x 10<sup>-34</sup> (<em>Js</em>) Joule seconds.</p>
 	
 		<p><em>f</em> is the frequency of a photon expressed in Hertz (Hz).</p>
 </div>	
-	
+		<br>
+	<p><span style='text-align:center; display:block;color: #99ffeb;'>Using (&#x3BB;) = 550 nm and a frequency of 545,077,196 Mhz, what is the Energy of a single photon?</span></p>
+<!--  Q Button  !-->
+<div class="Q-center"> 
+		<div class="Q-button-position" <button id="Q-button">Answer</button></div>
+</div>
+<div id="textToReveal" class="hidden-text"></div>
+
+<script>
+  // JavaScript to toggle visibility on click.  uses get element by ID
+  const button = document.getElementById('Q-button');
+  const textContainer = document.getElementById('textToReveal');
+
+  button.addEventListener('click', function() {
+    // Toggle the 'hidden-text' class
+    textContainer.classList.toggle('hidden-text');
+    
+    // Optional: Change the button's text after the first click
+    if (textContainer.classList.contains('hidden-text')) {
+      button.textContent = 'Reveal';
+    } else {
+      button.textContent = '3.612 x 10<sup>-19</sup> J';
+    }
+  });
+</script></div>		
+<br><br>
 
 <br><br><br><br><br>
 
@@ -205,6 +230,7 @@
 </footer>	
 </body>
 </html>
+
 
 
 
