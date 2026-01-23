@@ -18,7 +18,6 @@
 		<title>Electromagnetic Radiation</title>	
 		<link rel="stylesheet" href="https://L-deck.com/styles/main-index.css">
 		<link rel="stylesheet" href="https://L-deck.com/styles/Q-button.css">
-		<link rel="stylesheet" href="https://L-deck.com/styles/R-button.css">
 	
 		<link rel="apple-touch-icon" sizes="180x180" href="https://L-deck.com/images/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="https://L-deck.com/images/favicon-32x32.png">
@@ -99,14 +98,14 @@
 		<p><em>f</em>, is the wave frequency in cycles per second, expressed in Hertz (Hz).</p>
 	<br>
 	<p><span style='text-align:center; display:block;color: #99ffeb;'>If 550 nm is the midpoint of the visible light spectrum, what is the frequency at that point?</span></p>
-<!--  Q Button  
+<!--  Q Button  -->
 <div class="Q-center"> 
 		<div class="Q-button-position" <button id="Q-button">Answer</button></div>
 </div>
 <div id="textToReveal" class="hidden-text"></div>
 
 <script>
-  // JavaScript to toggle visibility on click.  uses get element by ID
+  // JavaScript to toggle visibility on click.  uses get element by ID if only one button
   const button = document.getElementById('Q-button');
   const textContainer = document.getElementById('textToReveal');
 
@@ -121,7 +120,7 @@
       button.textContent = '545,077,196 MHz';
     }
   });
-</script> -->
+</script>
 </div>		
 <br><br>
 
@@ -148,7 +147,7 @@
 <br>	
 	<p><span style='text-align:center; display:block;color: #99ffeb;'>Using (&#x3BB;) = 550 nm and a frequency of 545,077,196 Mhz, what is the Energy of a single photon?</span></p>
 	
-<!--  R Button  -->
+<!--  R Button  
 <div class="R-center"> 
 		<div class="R-button-position" <button id="R-button">Answer</button></div>
 </div>
@@ -169,8 +168,10 @@
     } else {
       button.textContent = '3.612 x 10<sup>-19</sup> J';
     }
-  });
-</script>	</div>		
+  }); 
+</script>	-->   
+	
+</div>		
 <br><br>
 
 <br><br><br><br><br>
@@ -237,6 +238,7 @@
 </footer>	
 </body>
 </html>
+
 
 
 
