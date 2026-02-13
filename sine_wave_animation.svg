@@ -1,10 +1,9 @@
-
 <svg id="sine-wave"
     width="250" 
     height="250" 	
     viewBox="0 -50 50 100" 
     preserveAspectRatio="xMaxYMid slice" 
-    xmlns="http://www.w3.org/2000/svg">
+    xmlns="http://www.w3.org/2000/svg">		<!--  sine-wave-animation.svg  2.13.2026   -->
 
     <rect x="0" y="-25" width="50" height="50" fill="Black" />  <!--was x="0";  Move: from=X,Y  to=X,Y   Violet=BF40BF LtGrn= 00ef8f-->
 
@@ -59,3 +58,4 @@
 
     </path>
 </svg>
+
