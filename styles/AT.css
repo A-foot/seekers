@@ -1,4 +1,4 @@
-/*   AT.css  C.12.23.2024   R.2.13.2026 
+/*   AT.css  C.12.23.2024   R.2.17.2026 
 
   display: inline-block;
   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
@@ -65,7 +65,21 @@
 		width: 60%;
 		margin: auto;		
 		}
-	
+
+.image-container {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks the children vertically */
+    /* Optional: Center the images horizontally within the container */
+    align-items: center; 
+    /* Optional: Add some spacing between the images */
+    gap: 10px; 
+}
+
+/* Optional: style the images themselves */
+.image-container img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; 
+}
 
 .foot {
 	flex-shrink: 0; /* Prevents the footer from shrinking */
@@ -78,6 +92,7 @@
 	color: #ffd125;
 	font-size: 1.0em;
 	}
+
 
 
 
