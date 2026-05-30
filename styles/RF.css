@@ -11,8 +11,8 @@
 		}
 	
 		nav a{
-			color: #00ef8f;
-			font-size: 1.70em;	
+			color: #ffbc52;   /* color was #00ef8f;  */
+			font-size: 1.80em;	
 			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			text-decoration: none;			
 		}
