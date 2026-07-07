@@ -1,4 +1,4 @@
-/*   AT.css  C.12.23.2024   R.5.30.2026 
+/*   AT.css  C.12.23.2024   R.07.07.2026 
 
   display: inline-block;
   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
@@ -16,7 +16,7 @@
 		}
 	
 		nav a{
-			color: #ffbc52;  /*  gold, was blue  */
+			color: blue;  /*  was gold #ffbc52, now blue  */
 			font-size: 1.80em;	
 			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			text-decoration: none;			
