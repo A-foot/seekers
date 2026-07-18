@@ -31,7 +31,7 @@
 		 /* top line of text */
 			color: #00ef8f;
 			text-align: center;
-			width: 60%;
+			width: 100%;
 			margin: auto;
 			color: black;
 			font-size: 1.0em;	
@@ -75,18 +75,18 @@
     gap: 10px; 
 }
 
-/* Optional: style the images themselves */
+/* Optional: style the images themselves 
 .image-container img {
-    max-width: 100%; /* Ensures images are responsive */
+    max-width: 100%; /* Ensures images are responsive 
     height: auto; 
-}
+}  */
 
 	.clue-description{
 		font-family: monospace;
-		font-size: 1.75em;		
+		font-size: 1.5em;		
 		color: blue;  /*  was  now blue 
 		text-align: justify;
-		width: 60%;
+		width: 70%;
 		margin: auto;	*/		
 		}
 
