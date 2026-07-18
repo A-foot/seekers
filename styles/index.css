@@ -54,11 +54,11 @@
 
 	.spectrum-bar {
 		display: flex;	
-		height: 42px;
-		width: 1080px;
+		height: 40px;
+		width: 1140px;
 		margin: auto;
-		background-image: linear-gradient(to right, black, violet, indigo, blue, green, yellow, orange, red, red, #ff4d4d);
-		border: none; /* adds an optional border */
+		background-image: linear-gradient(to right, black, violet, indigo, blue, green, yellow, orange, red, red, #ff4d4d, black);
+		border: none; /* adds an optional border                                   FF4D4D is sunset orange aka red*/
 		}
 	
 				/* used for 400/700 nm indicators;  screen size  1920 Horizontal 1080 Verticle  */
