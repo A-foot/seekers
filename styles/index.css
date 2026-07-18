@@ -57,7 +57,7 @@
 		height: 40px;
 		width: 1140px;
 		margin: auto;
-		background-image: linear-gradient(to right, black, violet, indigo, blue, green, yellow, orange, red, red, #ff4d4d, black);
+		background-image: linear-gradient(to right, black, black, violet, indigo, blue, green, yellow, orange, red, red, #ff4d4d, black, black);
 		border: none; /* adds an optional border                                   FF4D4D is sunset orange aka red*/
 		}
 	
