@@ -1,4 +1,4 @@
-/*   AT.css  C.12.23.2024   R.07.07.2026 
+/*   AT.css  C.12.23.2024   R.07.18.2026 
 
   display: inline-block;
   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
@@ -74,6 +74,15 @@
     /* Optional: Add some spacing between the images */
     gap: 10px; 
 }
+
+	.light-description{
+		font-family: monospace;
+		font-size: 1.65em;
+		text-align: justify;		
+		color: #00ef8f;
+		width: 60%;
+		margin: auto;			
+		}
 
 /* Optional: style the images themselves */
 .image-container img {
