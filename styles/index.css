@@ -54,10 +54,10 @@
 
 	.spectrum-bar {
 		display: flex;	
-		height: 40px;
-		width: 1140px;
+		height: 38px;
+		width: 1200px;
 		margin: auto;
-		background-image: linear-gradient(to right, black, #58026E, indigo, blue, green, yellow, #ff4d4d, red, red, #850505, black);
+		background-image: linear-gradient(to right, black, #58026E, indigo, blue, green, yellow, #ff4d4d, red, #850505, black);
 		border: none; /* adds an optional border   removed violet                                FF4D4D is sunset orange aka red*/
 		}
 	
