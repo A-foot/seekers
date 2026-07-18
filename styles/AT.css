@@ -75,11 +75,11 @@
     gap: 10px; 
 }
 
-	.light-description{
+	.clue-description{
 		font-family: monospace;
-		font-size: 1.65em;
+		font-size: 1.75em;
 		text-align: justify;		
-		color: #00ef8f;
+		color: blue;  /*  was  now blue  */
 		width: 60%;
 		margin: auto;			
 		}
