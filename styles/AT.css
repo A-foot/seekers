@@ -60,9 +60,9 @@
 	.at-description {
 		font-family: monospace;
 		text-align: center;	
-		font-size: 2.1em;		
+		font-size: 2.0em;		
 		color: blue;
-		width: 60%;
+		width: 80%;
 		margin: auto;		
 		}
 
@@ -83,7 +83,7 @@
 
 	.clue-description{
 		font-family: monospace;
-		font-size: 1.5em;		
+		font-size: 1.4em;		
 		color: blue;  /*  was  now blue 
 		text-align: justify;
 		width: 100%;
@@ -93,7 +93,7 @@
 .flex-container {
   display: flex;         /* Aligns items side-by-side */
   align-items: center;   /* Centers text vertically relative to the image */
-  gap: 20px;             /* Adds spacing between the image and text */
+  gap: 10px;             /* Adds spacing between the image and text */
 }
 
 .foot {
