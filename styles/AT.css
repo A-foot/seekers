@@ -75,19 +75,25 @@
     gap: 10px; 
 }
 
-	.clue-description{
-		font-family: monospace;
-		font-size: 1.75em;
-		text-align: justify;		
-		color: blue;  /*  was  now blue  */
-		width: 60%;
-		margin: auto;			
-		}
-
 /* Optional: style the images themselves */
 .image-container img {
     max-width: 100%; /* Ensures images are responsive */
     height: auto; 
+}
+
+	.clue-description{
+		font-family: monospace;
+		font-size: 1.75em;		
+		color: blue;  /*  was  now blue 
+		text-align: justify;
+		width: 60%;
+		margin: auto;	*/		
+		}
+
+.flex-container {
+  display: flex;         /* Aligns items side-by-side */
+  align-items: center;   /* Centers text vertically relative to the image */
+  gap: 20px;             /* Adds spacing between the image and text */
 }
 
 .foot {
