@@ -1,4 +1,4 @@
-/* index.css  L-Deck  C12.14.2024  R5.30.2026   */
+/* index.css  L-Deck  C12.14.2024  R7.18.2026   */
 
 		nav ul{
 			list-style-type: none;
@@ -57,7 +57,7 @@
 		height: 42px;
 		width: 1080px;
 		margin: auto;
-		background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red, red, #ff4d4d);
+		background-image: linear-gradient(to right, black, violet, indigo, blue, green, yellow, orange, red, red, #ff4d4d);
 		border: none; /* adds an optional border */
 		}
 	
